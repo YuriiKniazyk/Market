@@ -11,7 +11,7 @@ export class ProductComponent implements OnInit {
     {id:1,
     name: 'article 1',
     label: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    price:25}, 
+    price:25},
     {id:3,
     name:"article 3",
     label:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -24,16 +24,17 @@ export class ProductComponent implements OnInit {
     name:"article 7",
     label:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price:35}
-  ]; 
+  ];
 
   bascket: any[] = [];
-  
-  constructor(private route: ActivatedRoute, private router: Router) { 
+
+  constructor(private route: ActivatedRoute, private router: Router) {
     let str = localStorage.getItem('products');
     if(str !== null){
       this.bascket = JSON.parse(str);
     }
   }
+
 
   Buy(id){
     let exist = this.bascket.find(function(element) {
@@ -46,7 +47,7 @@ export class ProductComponent implements OnInit {
       });
 
       this.bascket.push(arr);
-      localStorage.setItem('products', JSON.stringify(this.bascket));  
+      localStorage.setItem('products', JSON.stringify(this.bascket));
     }
   }
 
