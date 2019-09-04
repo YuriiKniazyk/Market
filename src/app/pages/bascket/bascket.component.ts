@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class BascketComponent implements OnInit {
   products: any[] = []; 
   bascketPrice: number = 0;
-  bascketWeight: number = 0;
 
   constructor() { 
     this.products = JSON.parse(localStorage.getItem('products'));
@@ -17,23 +16,12 @@ export class BascketComponent implements OnInit {
 
   sum(){
     if (this.products == null){
-      this.bascketPrice = 0;  
+      this.bascketPrice = 0;    
     } else {
       var sum = this.products.reduce(function (accumulator, item) {
         return accumulator + item.price;
       }, 0);
       this.bascketPrice = sum;
-    }
-  }
-
-  sumWeight(){
-    if (this.products == null){
-      this.bascketWeight = 0;  
-    } else {
-      var sum = this.products.reduce(function (accumulator, item) {
-        return accumulator + item.weight;
-      }, 0);
-      this.bascketWeight = sum;
     }
   }
   

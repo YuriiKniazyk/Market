@@ -11,23 +11,19 @@ export class ProductComponent implements OnInit {
     {id:1,
     name: 'article 1',
     label: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    price:25,
-    weight:20},
+    price:25},
     {id:3,
     name:"article 3",
     label:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    price:45,
-    weight:22},
+    price:45},
     {id:2,
     name:"article 2",
     label:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    price:35,
-    weight:39},
+    price:35},
     {id:7,
     name:"article 7",
     label:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    price:35,
-    weight:55}
+    price:35}
   ];
 
   bascket: any[] = [];
