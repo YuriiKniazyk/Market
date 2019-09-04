@@ -4,8 +4,11 @@ body {
     font-family: 'open sans';
     overflow-x: hidden; }
   
-  img {
-    max-width: 100%; }
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+  }
   
   .preview {
     display: -webkit-box;

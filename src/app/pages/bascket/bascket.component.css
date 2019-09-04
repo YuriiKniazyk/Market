@@ -12,12 +12,17 @@
    
   .product-price {
     float: left;
-    width: 10%;
+    width: 5%;
+  }
+
+  .product-weight {
+    float: left;
+    width: 5%;
   }
    
   .product-quantity {
     float: left;
-    width: 10%;
+    width: 5%;
   }
    
   .product-removal {
@@ -26,6 +31,12 @@
   }
    
   .product-line-price {
+    float: left;
+    width: 10%;
+    text-align: right;
+  }
+
+  .product-line-weight {
     float: left;
     width: 10%;
     text-align: right;
@@ -137,7 +148,7 @@
   .totals .totals-item .totals-value {
     float: right;
     width: 21%;
-    text-align: right;
+    padding-left: 5px;
   }
   .totals .totals-item-total {
     font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
@@ -188,7 +199,12 @@
       clear: both;
       width: 70px;
     }
-   
+    
+    .product-weight {
+      clear: both;
+      width: 70px;
+    }
+
     .product-quantity {
       width: 100px;
     }
