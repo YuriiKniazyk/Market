@@ -18,3 +18,4 @@
 3. Responsive design (допускається використання сторонніх бібліотек); 
 4. Викласти ​github або gitlab або bitbucket; 
 5. Readme з інструкцією як розгортати проект 
+asasasas
